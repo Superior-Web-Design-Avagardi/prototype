@@ -1,0 +1,92 @@
+
+body {
+	position: relative;
+	min-height: 100%;
+}
+
+.background {
+	position: absolute;
+	z-index: -1;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	
+	background: rgb(247,251,255); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  rgba(247,251,255,1) 0%, rgba(199,213,224,1) 77%, rgba(166,182,193,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(247,251,255,1)), color-stop(77%,rgba(199,213,224,1)), color-stop(100%,rgba(166,182,193,1))); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(247,251,255,1) 0%,rgba(199,213,224,1) 77%,rgba(166,182,193,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  rgba(247,251,255,1) 0%,rgba(199,213,224,1) 77%,rgba(166,182,193,1) 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  rgba(247,251,255,1) 0%,rgba(199,213,224,1) 77%,rgba(166,182,193,1) 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  rgba(247,251,255,1) 0%,rgba(199,213,224,1) 77%,rgba(166,182,193,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7fbff', endColorstr='#a6b6c1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+.row {
+	width:1024px;
+	margin: 0 auto;
+}
+
+.site-header {
+	padding: 0 64px;
+}
+
+.banner {
+	width:100%;
+	padding: 16px;
+	
+	background-color: #FFF;
+	background-image: url(../img/pattern.png);
+	background-repeat: repeat;
+	
+	border-left:#DDD solid 1px;
+	border-right:#DDD solid 1px;
+	border-bottom:#DDD solid 1px;
+	
+	border-bottom-left-radius: 128px 32px;
+	border-bottom-right-radius: 128px 32px;
+	
+	box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.05), 0 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.nav-title {
+	padding: 8px 0;
+	
+	text-align: center;
+	font-size: 2.2em;
+	font-family: georgia, serif;
+}
+
+.nav-item {
+	display: inline-block;
+	width:100%;
+	padding: 8px 0;
+	
+	text-align: center;
+	font-size: 1.2em;
+	line-height: 1.2em;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	
+	border-top: #DDD dotted 2px;
+}
+
+.nav-item:last-child {
+	border-bottom: #DDD dotted 2px;
+	margin-bottom: 16px;
+}
+
+.nav-item:hover {
+	background-color: rgb(253, 253, 213);
+}
+
+.site-main {
+	margin: 64px 0;
+	color:#FFF;
+	text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Lato', sans-serif;
+}
