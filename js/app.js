@@ -17,8 +17,17 @@
 		$('[data-action="aboutUs"]').click(fx.aboutUs);
 	}
 	
+	function slideShow() {
+		var opts = {
+			mode : 'fade'
+		};
+		
+		$('.slider').bxSlider(opts);
+	}
+	
 	function init() {
 		addListners();
+		slideShow();
 	}
 	
 	$(document).ready(function() {

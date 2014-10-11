@@ -12,16 +12,15 @@ body {
 	width:100%;
 	min-height:100%;
 	
-	background: rgb(23,33,56); /* Old browsers */
-	background: -moz-radial-gradient(center, ellipse cover,  rgba(23,33,56,1) 0%, rgba(0,0,0,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(23,33,56,1)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
-	background: -webkit-radial-gradient(center, ellipse cover,  rgba(23,33,56,1) 0%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-radial-gradient(center, ellipse cover,  rgba(23,33,56,1) 0%,rgba(0,0,0,1) 100%); /* Opera 12+ */
-	background: -ms-radial-gradient(center, ellipse cover,  rgba(23,33,56,1) 0%,rgba(0,0,0,1) 100%); /* IE10+ */
-	background: radial-gradient(ellipse at center,  rgba(23,33,56,1) 0%,rgba(0,0,0,1) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#172138', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-	
-	box-shadow: 0 2px 16px 1px rgba(0,0,0,0.2);
+background: rgb(46,50,51); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  rgba(46,50,51,1) 0%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(46,50,51,1)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(46,50,51,1) 0%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  rgba(46,50,51,1) 0%,rgba(0,0,0,1) 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  rgba(46,50,51,1) 0%,rgba(0,0,0,1) 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  rgba(46,50,51,1) 0%,rgba(0,0,0,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e3233', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 }
 
 .section2 {
@@ -74,6 +73,16 @@ body {
 	line-height: 1.6em;
 	margin-top: 0;
 	margin-bottom: 0;
+}
+
+.slider-window {
+	width: 40%;
+	margin: 0 auto;
+}
+
+.bx-wrapper .bx-viewport {
+	border:none!important;
+	box-shadow: 0 2px 8px 2px rgba(0,0,0,0.4)!important;
 }
 
 h1, h2, h3, h4 {
