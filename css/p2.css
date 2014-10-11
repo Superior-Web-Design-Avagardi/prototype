@@ -1,3 +1,37 @@
+@font-face {
+	font-family: 'icomoon';
+	src: url('fonts/icomoon.eot');
+}
+@font-face {
+	font-family: 'icomoon';
+	src: url(data:application/x-font-ttf;charset=utf-8;base64,AAEAAAALAIAAAwAwT1MvMggi/LcAAAC8AAAAYGNtYXAaVMxZAAABHAAAAExnYXNwAAAAEAAAAWgAAAAIZ2x5Zni44W8AAAFwAAAA6GhlYWQBU4AxAAACWAAAADZoaGVhA1oB5gAAApAAAAAkaG10eAMAAIgAAAK0AAAAFGxvY2EAKACIAAACyAAAAAxtYXhwAAcAOwAAAtQAAAAgbmFtZVcZpu4AAAL0AAABRXBvc3QAAwAAAAAEPAAAACAAAwIAAZAABQAAAUwBZgAAAEcBTAFmAAAA9QAZAIQAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAABAAADmAQHg/+D/4AHgACAAAAABAAAAAAAAAAAAAAAgAAAAAAACAAAAAwAAABQAAwABAAAAFAAEADgAAAAKAAgAAgACAAEAIOYB//3//wAAAAAAIOYB//3//wAB/+MaAwADAAEAAAAAAAAAAAAAAAEAAf//AA8AAQAAAAAAAAAAAAIAADc5AQAAAAABAAAAAAAAAAAAAgAANzkBAAAAAAEAAAAAAAAAAAACAAA3OQEAAAAAAQCIAGEBeAFsADgAACUnNz4BNTQmJy4BIyIGDwEnLgEjIgYHDgEVFBYfAQcOARUUFhceATMyNj8BFx4BMzI2Nz4BNTQmJwFvRkYFBAQFBAsGBgwEREQEDAYFDAQFBAQFRkYFBAQFBAwFBgwEREQEDAYFDAQFBAQFllBRBQsGBgsFBAUFBE5OBAUFBAULBgYLBVFQBQsGBgsFBAUFBE5OBAUFBAULBgYLBQAAAAEAAAABAABJ4nM6Xw889QALAgAAAAAA0F6f5AAAAADQXp/kAAAAAAF4AWwAAAAIAAIAAAAAAAAAAQAAAeD/4AAAAgAAAAAAAXgAAQAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAABAAAAAgAAiAAAAAAACgAUAB4AdAABAAAABQA5AAEAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAADgCuAAEAAAAAAAEADgAAAAEAAAAAAAIADgBHAAEAAAAAAAMADgAkAAEAAAAAAAQADgBVAAEAAAAAAAUAFgAOAAEAAAAAAAYABwAyAAEAAAAAAAoANABjAAMAAQQJAAEADgAAAAMAAQQJAAIADgBHAAMAAQQJAAMADgAkAAMAAQQJAAQADgBVAAMAAQQJAAUAFgAOAAMAAQQJAAYADgA5AAMAAQQJAAoANABjAGkAYwBvAG0AbwBvAG4AVgBlAHIAcwBpAG8AbgAgADEALgAwAGkAYwBvAG0AbwBvAG5pY29tb29uAGkAYwBvAG0AbwBvAG4AUgBlAGcAdQBsAGEAcgBpAGMAbwBtAG8AbwBuAEYAbwBuAHQAIABnAGUAbgBlAHIAYQB0AGUAZAAgAGIAeQAgAEkAYwBvAE0AbwBvAG4ALgAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA) format('truetype'),
+		 url(data:application/font-woff;charset=utf-8;base64,d09GRgABAAAAAASoAAsAAAAABFwAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABPUy8yAAABCAAAAGAAAABgCCL8t2NtYXAAAAFoAAAATAAAAEwaVMxZZ2FzcAAAAbQAAAAIAAAACAAAABBnbHlmAAABvAAAAOgAAADoeLjhb2hlYWQAAAKkAAAANgAAADYBU4AxaGhlYQAAAtwAAAAkAAAAJANaAeZobXR4AAADAAAAABQAAAAUAwAAiGxvY2EAAAMUAAAADAAAAAwAKACIbWF4cAAAAyAAAAAgAAAAIAAHADtuYW1lAAADQAAAAUUAAAFFVxmm7nBvc3QAAASIAAAAIAAAACAAAwAAAAMCAAGQAAUAAAFMAWYAAABHAUwBZgAAAPUAGQCEAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAQAAA5gEB4P/g/+AB4AAgAAAAAQAAAAAAAAAAAAAAIAAAAAAAAgAAAAMAAAAUAAMAAQAAABQABAA4AAAACgAIAAIAAgABACDmAf/9//8AAAAAACDmAf/9//8AAf/jGgMAAwABAAAAAAAAAAAAAAABAAH//wAPAAEAAAAAAAAAAAACAAA3OQEAAAAAAQAAAAAAAAAAAAIAADc5AQAAAAABAAAAAAAAAAAAAgAANzkBAAAAAAEAiABhAXgBbAA4AAAlJzc+ATU0JicuASMiBg8BJy4BIyIGBw4BFRQWHwEHDgEVFBYXHgEzMjY/ARceATMyNjc+ATU0JicBb0ZGBQQEBQQLBgYMBEREBAwGBQwEBQQEBUZGBQQEBQQMBQYMBEREBAwGBQwEBQQEBZZQUQULBgYLBQQFBQROTgQFBQQFCwYGCwVRUAULBgYLBQQFBQROTgQFBQQFCwYGCwUAAAABAAAAAQAASeJzOl8PPPUACwIAAAAAANBen+QAAAAA0F6f5AAAAAABeAFsAAAACAACAAAAAAAAAAEAAAHg/+AAAAIAAAAAAAF4AAEAAAAAAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAAAQAAAAIAAIgAAAAAAAoAFAAeAHQAAQAAAAUAOQABAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA4ArgABAAAAAAABAA4AAAABAAAAAAACAA4ARwABAAAAAAADAA4AJAABAAAAAAAEAA4AVQABAAAAAAAFABYADgABAAAAAAAGAAcAMgABAAAAAAAKADQAYwADAAEECQABAA4AAAADAAEECQACAA4ARwADAAEECQADAA4AJAADAAEECQAEAA4AVQADAAEECQAFABYADgADAAEECQAGAA4AOQADAAEECQAKADQAYwBpAGMAbwBtAG8AbwBuAFYAZQByAHMAaQBvAG4AIAAxAC4AMABpAGMAbwBtAG8AbwBuaWNvbW9vbgBpAGMAbwBtAG8AbwBuAFIAZQBnAHUAbABhAHIAaQBjAG8AbQBvAG8AbgBGAG8AbgB0ACAAZwBlAG4AZQByAGEAdABlAGQAIABiAHkAIABJAGMAbwBNAG8AbwBuAC4AAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==) format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cross:before {
+	content: "\e601";
+}
+
+
+
+
+
 
 body {
 	position: relative;
@@ -94,4 +128,114 @@ article p {
 	font-size: 24px;
 	line-height: 34px;
 	margin: 0.6em 0;
+}
+
+.modal-inner {
+	width:100%;
+	padding: 32px;
+	
+	background-color: #FFF;
+	box-sizing: border-box;
+	border-radius: 3px;
+	
+	box-shadow: 0 2px 8px 2px rgba(0,0,0,0.4);
+}
+
+.modal-inner h2 {
+	margin: 0.4em 0;
+}
+
+
+
+
+
+
+input, textarea, button {
+	display: inline-block;
+	margin: 4px 0;
+	height:auto;
+	
+	font-family: helvetica, sans-serif;
+	font-size: 16px;
+	
+	border:none;
+	box-sizing: border-box;
+}
+
+input.full {
+	width: 100%;
+}
+
+input.big {
+	padding: 8px 24px!important;
+}
+
+input[type="button"], input[type="submit"], button {
+	display: inline-block;
+	padding: 8px 18px;
+	
+	font-family: helvetica, sans-serif;
+	font-weight: 700;
+	color:#FFF;
+	background-color: #3498DB;
+	border:#3498DB solid 2px;
+	border-radius: 3px;
+	background-clip: padding-box;
+	
+	text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+	box-shadow: inset 0 -2px rgba(0,0,0,0.1);
+}
+
+input[type="button"]:hover, input[type="submit"]:hover, button:hover {
+	border-color: #2383C4;
+}
+
+input[type="button"]:active, input[type="submit"]:active, button:active {
+	border-color: #2383C4;
+	background-color: #2383C4;
+}
+
+input[type="button"]:focus, input[type="submit"]:focus, button:focus {
+	outline: none;
+	border-color: #FFEB6B;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="number"] {
+	padding: 8px 18px;
+	border:#3498DB solid 2px;
+	border-radius: 3px;
+}
+
+input[type="text"]:active, input[type="password"]:active, input[type="email"]:active, input[type="number"]:active {
+	outline: none;
+	border-color: #FFEB6B;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="number"]:focus {
+	outline: none;
+	border-color: #FFEB6B;
+}
+
+textarea {
+	padding: 8px 18px;
+	border:#3498DB solid 2px;
+	border-radius: 3px;
+}
+
+textarea:focus {
+	outline: none;
+	border-color: #FFEB6B;
+}
+
+label {
+	display: inline-block;
+	margin-top: 14px;
+	
+	font-family: helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.full {
+	width:100%;
 }
